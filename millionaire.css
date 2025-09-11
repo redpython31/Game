@@ -161,7 +161,6 @@ s .background-video {
   width: 20%;
   height: 100%;
   margin-left: 2rem;
-  padding: 1rem;
   border-radius: 15px;
   backdrop-filter: blur(5rem);
   box-shadow: var(--box-shadow);
@@ -172,7 +171,6 @@ s .background-video {
 .rightConsole ol {
   flex-direction: column;
   list-style: disc;
-  padding: 1rem;
 }
 
 .rightConsole ol li {
@@ -180,14 +178,14 @@ s .background-video {
   font-family: var(--font-paragraph);
   font-size: var(--font-16px);
   text-align: left;
-  padding-left: 2rem;
+  padding-left: 2.8rem;
   list-style-position: inside;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 
-.rightConsole ol .active {
+.rightConsole ol li:hover {
   background-color: var(--secondary-green);
   border-radius: 100px;
 }
