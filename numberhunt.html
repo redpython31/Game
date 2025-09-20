@@ -96,7 +96,7 @@
         <div class="game-console-box-info">
           <div class="game-console-box-info-timer">
             <h2>Remaining Time</h2>
-            <p id="remainingtime">--:--</p>
+            <p id="remainingTime">--:--</p>
           </div>
           <h2>Message</h2>
           <p class="score-update">Try higher number</p>
@@ -110,17 +110,19 @@
             <button class="chanceBtn">
               <i class="fa-solid fa-dice"><span>Chance</span></i>
             </button>
-            <div class="game-console-box-mode-userInput time">
+            <div id="setTime" class="game-console-box-mode-userInput time">
               <h2>Timer (in Seconds)</h2>
               <hr />
               <span class="ten">10</span>
               <span class="thirty">30</span>
               <span class="sixty">60</span>
             </div>
-            <div class="game-console-box-mode-userInput chance">
+            <div id="setChance" class="game-console-box-mode-userInput chance">
               <h2>Chance</h2>
               <hr />
-              <span>5</span><span>10</span><span>15</span>
+              <span class="five">5</span>
+              <span class="ten">10</span>
+              <span class="fifteen">15</span>
             </div>
           </div>
           <div class="game-console-box-info-btn">
@@ -132,7 +134,7 @@
       <div class="game-console-input">
         <div class="game-console-input-chance">
           <h2>Remaining Chance:</h2>
-          <p>--</p>
+          <p id="remainingChance">--</p>
         </div>
 
         <table class="game-console-input-keyboard">

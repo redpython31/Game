@@ -17,7 +17,6 @@ const showSignUp = () => { // Function for shows the signup interface and hide l
     loginButton.style.display = "none";  // Disable login interface
 }
 
-// Start from here
 let choiceTime = document.querySelector(".timerBtn");
 let choiceChance = document.querySelector(".chanceBtn");
 let chanceOption = document.querySelector(".chance");
@@ -37,7 +36,6 @@ choiceChance.addEventListener("click", (event) => {
     console.log("Chance button was clicked ..");
 });
 
-// agar menus ke andar click hua toh bhi document listener na chale
 timerOption.addEventListener("click", (event) => event.stopPropagation());
 chanceOption.addEventListener("click", (event) => event.stopPropagation());
 
@@ -46,25 +44,54 @@ document.addEventListener("click", () => {
     timerOption.style.display = "none";
 });
 
+let timeBtn = document.querySelectorAll("#setTime span");
+let timeScreen = document.getElementById("remainingTime");
+let timeLeft = 10;
 
-let timeBtn = document.querySelectorAll(".game-console-box-mode-userInput span");
-timeBtn.forEach(btn => {
-    btn.addEventListener("click", function () {
+timeBtn.forEach(btn => {    // This function for check which time button is click by user
+    btn.addEventListener("click", () => {
         const value = btn.innerText.trim();
         if (value === "10") {
-            console.log("ten");
+            console.log("Ten");
+            timeScreen.innerText = value;
+            timeLeft = value;
         } else if (value === "30") {
-            console.log("thir");
+            console.log("Thirty");
+            timeScreen.innerText = value;
+            timeLeft = value;
         } else {
-            console.log("sixty");
+            console.log("Sixty");
+            timeScreen.innerText = value;
+            timeLeft = value;
         }
     });
 });
 
-// let timeScreen = document.getElementById("remainingtime");
-// timeScreen.innerHTML = "hello";
+let chanceBtm = document.querySelectorAll("#setChance span");
+let chanceScreen = document.getElementById("remainingChance");
+let chanceLeft = 15;
+chanceBtm.forEach(btn => {    // This funtion for check which chance button is click by user
+    btn.addEventListener("click", () => {
+        const value = btn.innerText.trim();
+        if (value === "5") {
+            console.log("Five");
+            chanceScreen.innerText = value;
+            chanceLeft = value;
+        } else if (value === "10") {
+            console.log("Ten");
+            chanceScreen.innerText = value;
+            chanceLeft = value;
+        } else {
+            console.log("Fifteen");
+            chanceScreen.innerText = value;
+            chanceLeft = value;
+        }
+    })
+});
+
+// Start from here
+
 // const countDown = setInterval(() => {
-//     // timeScreen.innerText = time;
 //     console.log(timeLeft);
 //     timeLeft--;
 //     if (time < 0) {
