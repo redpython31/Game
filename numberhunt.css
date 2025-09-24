@@ -1,24 +1,24 @@
-.centerBox{
+.centerBox {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.game{
+.game {
     width: 100%;
-    height: 100vh ;
+    height: 100vh;
     padding: 6rem 4rem 0;
     background-image: url(/assets/images/pic4.jpg);
     /* background-color: rgb(89, 0, 255); */
     background-size: cover;
-    background-position:center ;
+    background-position: center;
     background-repeat: no-repeat;
     gap: 2rem;
     overflow: hidden;
     z-index: 500;
 }
 
-.game h1{
+.game h1 {
     font-family: var(--font-heading);
     font-size: var(--font-32px);
     color: var(--font-color-black);
@@ -28,7 +28,7 @@
     margin: 1rem;
 }
 
-.game-console{
+.game-console {
     width: 75%;
     height: 100%;
     overflow: hidden;
@@ -36,7 +36,7 @@
     /* background-color: bisque; */
 }
 
-.game-console-box{
+.game-console-box {
     width: 100%;
     height: 42%;
     column-gap: 2rem;
@@ -46,15 +46,16 @@
     backdrop-filter: blur(2rem);
 }
 
-.game-console-box-info{
+.game-console-box-info {
     width: calc(100% / 3);
     height: 100%;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: start;
 }
-h2{
+
+h2 {
     flex: 0 0 auto;
     font-family: var(--font-paragraph);
     font-size: var(--font-16px);
@@ -65,7 +66,7 @@ h2{
     margin: 0.5rem;
 }
 
-.game-console-box-info p{
+.game-console-box-info p {
     font-family: var(--font-paragraph);
     font-size: var(--font-14px);
     font-weight: var(--font-mid);
@@ -74,22 +75,22 @@ h2{
     text-align: center;
     align-content: center;
     border-radius: 1rem;
-    background-color:var(--bg-box-trspt);
+    background-color: var(--bg-box-trspt);
 }
 
-.game-console-box-info:nth-of-type(1) p{
+.game-console-box-info:nth-of-type(1) p {
     font-size: var(--font-100px);
     font-weight: var(--font-bold);
-    
+
 }
 
-.game-console-box-info-timer p
-{
+.game-console-box-info-timer p {
     font-size: var(--font-40px);
     font-weight: var(--font-bold);
-    
+
 }
-.game-console-box-info-timer{
+
+.game-console-box-info-timer {
     visibility: visible;
 }
 
@@ -102,7 +103,7 @@ h2{
     position: relative;
 }
 
-.game-console-box-mode-userInput{
+.game-console-box-mode-userInput {
     width: 22rem;
     height: 9rem;
     font-family: var(--font-paragraph);
@@ -114,10 +115,10 @@ h2{
     left: 10;
     background-color: var(--bg-color-white);
     z-index: 100;
-    display: block;
+    display: none;
 }
 
-.game-console-box-mode-userInput span{
+.game-console-box-mode-userInput span {
     display: block;
     float: left;
     width: 5rem;
@@ -129,17 +130,18 @@ h2{
     transition: var(--trns-effect);
 }
 
-.chance{
+.chance,
+.time {
     display: none;
 }
 
-.game-console-box-mode-userInput span:hover{
+.game-console-box-mode-userInput span:hover {
     background-color: var(--bg-color-darkgray);
     color: var(--font-color-white);
 }
 
-.game-console-box-mode  button {
-    width: calc(60% / 2); 
+.game-console-box-mode button {
+    width: calc(60% / 2);
     height: 8rem;
     border: none;
     cursor: pointer;
@@ -151,28 +153,28 @@ h2{
     margin: 1.6rem 0;
 }
 
-.game-console-box-mode span{
+.game-console-box-mode span {
     display: block;
     font-family: var(--font-paragraph);
     font-size: var(--font-14px);
     font-weight: var(--font-mid);
     transition: var(--trns-effect);
-    
+
 }
 
-.game-console-box-mode i{
+.game-console-box-mode i {
     width: 100%;
     height: 100%;
     color: var(--font-color-black);
     border-radius: 1rem;
     font-size: var(--font-40px);
     background-color: var(--bg-box-trspt);
-   padding-top: 1.6rem;
+    padding-top: 1.6rem;
     transition: var(--trns-effect);
 }
 
 
-.game-console-box-info-btn button{
+.game-console-box-info-btn button {
     width: 13rem;
     height: 5rem;
     font-family: var(--font-paragraph);
@@ -186,19 +188,20 @@ h2{
     transition: var(--trns-effect);
 }
 
-.game-console-box-info-btn button:hover , .game-console-box-mode  button i:hover{
+.game-console-box-info-btn button:hover,
+.game-console-box-mode button i:hover {
     color: var(--font-color-white);
     background-color: var(--bg-hover-blue);
     transform: scale(1.1);
 }
 
-.game-console-input{
+.game-console-input {
     width: 100%;
     height: calc(68% - 14rem);
     border-radius: 2rem;
     margin: 1rem 0;
     display: flex;
-    justify-content: center ;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -211,10 +214,10 @@ h2{
 .game-console-input-keyboard {
     border-collapse: separate;
     border-spacing: 0.4rem;
-    
+
 }
 
-.game-console-input-keyboard td{
+.game-console-input-keyboard td {
     font-family: var(--font-paragraph);
     font-size: var(--font-12px);
     font-weight: var(--font-semibold);
@@ -227,14 +230,14 @@ h2{
     cursor: pointer;
 }
 
-.game-console-input-keyboard td:hover{
+.game-console-input-keyboard td:hover {
     background-color: var(--primary-blue);
     color: var(--font-color-white);
     transform: scale(1.3);
     box-shadow: var(--box-shadow);
 }
 
-.game-console-input-chance{
+.game-console-input-chance {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -244,14 +247,14 @@ h2{
     border-radius: 1rem;
 }
 
-.game-console-input-chance p{
+.game-console-input-chance p {
     width: 3rem;
     height: auto;
     font-weight: var(--font-semibold);
 }
 
 
-.game-score{
+.game-score {
     width: calc(100% - 75%);
     height: 86%;
     border-radius: 2rem;
@@ -262,35 +265,37 @@ h2{
     backdrop-filter: blur(2rem);
 }
 
-.game-score h2{
+.game-score h2 {
     font-family: var(--font-heading);
     font-size: var(--font-20px);
     border-bottom: 2px solid var(--bg-color-gray);
     padding-bottom: 1rem;
 }
 
-.game-score table{
+.game-score table {
     width: 100%;
     height: calc(100% - 4.6rem);
     border-collapse: collapse;
     /* background-color: var(--bg-color-gray); */
 }
 
-.game-score table th{
+.game-score table th {
     font-family: var(--font-paragraph);
-    font-size: var(--font-14px);border-bottom: 1px solid var(--bg-color-gray);
+    font-size: var(--font-14px);
+    border-bottom: 1px solid var(--bg-color-gray);
     text-align: center;
     padding: 1rem 0;
 }
 
-.game-score table tr{
+.game-score table tr {
     border-bottom: 1px solid var(--bg-color-gray);
 }
 
-.game-score table tr:nth-child(even){
+.game-score table tr:nth-child(even) {
     background-color: var(--tspt-primary-blue);
 }
-.game-score table td{
+
+.game-score table td {
     width: calc(100% / 4);
     height: calc(100% / 10);
     font-family: var(--font-paragraph);
@@ -299,7 +304,7 @@ h2{
     text-align: center;
 }
 
-.game-score table td:nth-child(2){
+.game-score table td:nth-child(2) {
     max-width: 12rem;
     white-space: nowrap;
     text-overflow: ellipsis;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,30 +16,31 @@
     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-  <body>
-    <div class="main-header">
-      <div class="main-header-logo">
-        <a href="/index.html"></a>
-      </div>
-      <nav class="main-header-navbar">
-        <ul>
-          <li><a href="/index.html">Home</a></li>
-          <li class="main-header-navbar-dropdown">
-            <a href="#">Games</a>
-            <div class="main-header-navbar-dropdown-content">
-              <a href="/numberhunt.html">Number Hunt</a>
-              <a href="/millionaire.html">Millionaire</a>
-              <a href="#">Tic Tac Toe</a>
-              <a href="#">Spin Wheel</a>
-            </div>
-          </li>
-          <li><a href="#">Services</a></li>
-          <li class="main-header-navbar-dropdown"><a href="#">Contact</a></li>
-          <li><a href="/about.html">About us</a></li>
-        </ul>
-      </nav>
-      <button onclick="showLogin()" class="main-header-login">Login</button>
+
+<body class="sense">
+  <div class="main-header">
+    <div class="main-header-logo">
+      <a href="/index.html"></a>
     </div>
+    <nav class="main-header-navbar">
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li class="main-header-navbar-dropdown">
+          <a href="#">Games</a>
+          <div class="main-header-navbar-dropdown-content">
+            <a href="/numberhunt.html">Number Hunt</a>
+            <a href="/millionaire.html">Millionaire</a>
+            <a href="#">Tic Tac Toe</a>
+            <a href="#">Spin Wheel</a>
+          </div>
+        </li>
+        <li><a href="#">Services</a></li>
+        <li class="main-header-navbar-dropdown"><a href="#">Contact</a></li>
+        <li><a href="/about.html">About us</a></li>
+      </ul>
+    </nav>
+    <button onclick="showLogin()" class="main-header-login">Login</button>
+  </div>
 
   <!-- -------------LogIn page------------------ -->
 
@@ -94,7 +96,7 @@
         <div class="game-console-box-info">
           <div class="game-console-box-info-timer">
             <h2>Remaining Time</h2>
-            <p>--:--</p>
+            <p id="remainingTime">--:--</p>
           </div>
           <h2>Message</h2>
           <p class="score-update">Try higher number</p>
@@ -102,21 +104,25 @@
         <div class="game-console-box-info">
           <h2>Mode</h2>
           <div class="game-console-box-mode">
-            <button>
+            <button class="timerBtn">
               <i class="fa-solid fa-stopwatch-20"><span>Timer</span></i>
             </button>
-            <button>
+            <button class="chanceBtn">
               <i class="fa-solid fa-dice"><span>Chance</span></i>
             </button>
-            <div class="game-console-box-mode-userInput">
+            <div id="setTime" class="game-console-box-mode-userInput time">
               <h2>Timer (in Seconds)</h2>
               <hr />
-              <span>10</span><span>30</span><span>60</span>
+              <span class="ten">10</span>
+              <span class="thirty">30</span>
+              <span class="sixty">60</span>
             </div>
-            <div class="game-console-box-mode-userInput chance">
+            <div id="setChance" class="game-console-box-mode-userInput chance">
               <h2>Chance</h2>
               <hr />
-              <span>5</span><span>10</span><span>15</span>
+              <span class="five">5</span>
+              <span class="ten">10</span>
+              <span class="fifteen">15</span>
             </div>
           </div>
           <div class="game-console-box-info-btn">
@@ -128,7 +134,7 @@
       <div class="game-console-input">
         <div class="game-console-input-chance">
           <h2>Remaining Chance:</h2>
-          <p>--</p>
+          <p id="remainingChance">--</p>
         </div>
 
         <table class="game-console-input-keyboard">
