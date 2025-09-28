@@ -138,5 +138,3 @@ const startGame = () => { // Start game function
 const restartGame = () => {
     console.log("game reset");
 }
-
-
