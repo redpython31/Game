@@ -89,8 +89,8 @@ const lockSettingsButtons = (lock) => {
     const pointer = lock ? "none" : "auto"; // disable pointer events if locked
     timeButtons.forEach(btn => btn.style.pointerEvents = pointer);
     chanceButtons.forEach(btn => btn.style.pointerEvents = pointer);
-    choiceTime.style.opacity = lock ? "0.5" : "1";   // show visual lock
-    choiceChance.style.opacity = lock ? "0.5" : "1";
+    choiceTime.style.opacity = lock ? "0.7" : "1";   // show visual lock
+    choiceChance.style.opacity = lock ? "0.7" : "1";
 };
 
 // Start the game
